@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chat</title>
+
+	<style>
+		.chat-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.message {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			margin: 10px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		.avatar {
+			margin-right: 10px;
+		}
+
+		.avatar img {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+		}
+
+		.message-content {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			width: 100%;
+			padding-left: 10px;
+			background-color: pink;
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+
+		.user-info {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			color: black;
+			font-weight: bold;
+		}
+
+		.user-name {
+			margin-right: 10px;
+		}
+
+		.time-ago {
+			color: gray;
+		}
+
+		.message-text {
+			color: black;
+			margin-top: 10px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="chat-container">
+		<div class="message">
+			<div class="avatar">
+				<img src="icons/avatar_2.png" alt="User Avatar">
+			</div>
+			<div class="message-content">
+				<div class="user-info">
+					<div class="user-name">Anie Smith</div>
+					<div class="time-ago">4 hours ago</div>
+				</div>
+				<div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu non nisl
+					tristique bibendum. Quisque auctor, enim vitae faucibus lacinia, mi libero posuere urna, vel dapibus tellus
+					urna eu ex.</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
