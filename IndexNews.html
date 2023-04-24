@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News</title>
+
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			background-color: #add8e6;
+			margin: 10px;
+		}
+
+		.column {
+			flex-basis: 30%;
+			margin-bottom: 20px;
+			background-color: white;
+		}
+
+		.column img {
+			width: 100%;
+			height: auto;
+		}
+
+		.column h2 {
+			margin: 10px 0;
+			font-size: 1.5em;
+			line-height: 1.2;
+			padding: 0px 10px 0px 10px;
+		}
+
+		.column p {
+			margin: 0;
+			font-size: 1em;
+			line-height: 1.4;
+			padding: 0px 10px 0px 10px;
+		}
+
+		@media (max-width: 768px) {
+			.column {
+				flex-basis: 48%;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.column {
+				flex-basis: 100%;
+			}
+		}
+
+		body {
+			background-color: #add8e6;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="column">
+			<img src="https://via.placeholder.com/350x150" alt="News Image">
+			<h2>News Title</h2>
+			<p>Lorem</p>
+		</div>
+		<div class="column">
+			<img src="https://via.placeholder.com/350x220" alt="News Image">
+			<h2>News Title</h2>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+		<div class="column">
+			<img src="https://via.placeholder.com/350x100" alt="News Image">
+			<h2>News Title</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, fugit?</p>
+		</div>
+		<div class="column">
+			<img src="https://via.placeholder.com/350x100" alt="News Image">
+			<h2>News Title</h2>
+			<p>Lorem</p>
+		</div>
+		<div class="column">
+			<img src="https://via.placeholder.com/350x230" alt="News Image">
+			<h2>News Title</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum vero unde, illum beatae quod expedita mollitia
+				obcaecati aliquam!</p>
+		</div>
+		<div class="column">
+			<img src="https://via.placeholder.com/350x150" alt="News Image">
+			<h2>News Title</h2>
+			<p>Lorem</p>
+		</div>
+		<div class="column">
+			<img src="https://via.placeholder.com/350x100" alt="News Image">
+			<h2>News Title</h2>
+			<p>Lorem</p>
+		</div>
+		<div class="column">
+			<img src="https://via.placeholder.com/350x350" alt="News Image">
+			<h2>News Title</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corrupti fugit praesentium, architecto quam
+				aliquam tempora vitae amet.</p>
+		</div>
+		<div class="column">
+			<img src="https://via.placeholder.com/350x150" alt="News Image">
+			<h2>News Title</h2>
+			<p>Lorem</p>
+		</div>
+
+	</div>
+</body>
+
+</html>
