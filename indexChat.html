@@ -8,14 +8,19 @@
 	<title>Chat</title>
 
 	<style>
-		.chat-container {
+		.chat-container_Anie {
 			display: flex;
-			flex-direction: column;
-			align-items: center;
 			justify-content: center;
+			margin-right: 20%;
 		}
 
-		.message {
+		.chat-container_Jack {
+			display: flex;
+			justify-content: center;
+			margin-left: 20%;
+		}
+
+		.message_Anie {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
@@ -25,50 +30,109 @@
 			border-radius: 10px;
 		}
 
-		.avatar {
+		.message_Jack {
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+			justify-content: flex-start;
+			margin: 10px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		.avatar_Anie {
 			margin-right: 10px;
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+			justify-content: flex-start;
+			width: 25%;
+		}
+
+		.avatar_Jack {
+			margin-left: 10px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			width: 25%;
 		}
 
 		.avatar img {
 			width: 50px;
 			height: 50px;
 			border-radius: 50%;
+			float: right;
 		}
 
-		.message-content {
+		.message-content_Anie {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: center;
 			width: 100%;
-			padding-left: 10px;
+			padding: 10px;
 			background-color: pink;
 			border-top-right-radius: 10px;
 			border-top-left-radius: 10px;
 			border-bottom-right-radius: 10px;
 		}
 
-		.user-info {
+		.message-content_Jack {
 			display: flex;
-			flex-direction: row;
-			align-items: center;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			width: 100%;
+			padding: 10px;
+			background-color: pink;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+
+		.user-info_Anie {
+			display: flex;
+			flex-direction: column;
+			align-items: right;
 			justify-content: space-between;
 			width: 100%;
 			color: black;
 			font-weight: bold;
 		}
 
-		.user-name {
-			margin-right: 10px;
+		.user-info_Jack {
+			display: flex;
+			flex-direction: column;
+			align-items: left;
+			justify-content: space-between;
+			width: 100%;
+			color: black;
+			font-weight: bold;
 		}
 
-		.time-ago {
+		.user-name_Anie {
+			text-align: right;
+		}
+
+		.user-name_Jack {
+			text-align: left;
+		}
+
+		.time-ago_Anie {
 			color: gray;
+			font-size: 12px;
+		}
+
+		.time-ago_Jack {
+			color: gray;
+			font-size: 12px;
 		}
 
 		.message-text {
 			color: black;
-			margin-top: 10px;
+			margin: 5px;
+			font-size: 14px;
 		}
 	</style>
 
@@ -76,16 +140,33 @@
 
 <body>
 
-	<div class="chat-container">
-		<div class="message">
-			<div class="avatar">
+	<div class="chat-container_Anie">
+		<div class="message_Anie">
+			<div class="avatar_Anie">
 				<img src="icons/avatar_2.png" alt="User Avatar">
-			</div>
-			<div class="message-content">
-				<div class="user-info">
-					<div class="user-name">Anie Smith</div>
-					<div class="time-ago">4 hours ago</div>
+				<div class="user-info_Anie">
+					<div class="user-name_Anie">Anie Smith</div>
+					<div class="time-ago_Anie">4 hours ago</div>
 				</div>
+			</div>
+			<div class="message-content_Anie">
+				<div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu non nisl
+					tristique bibendum. Quisque auctor, enim vitae faucibus lacinia, mi libero posuere urna, vel dapibus tellus
+					urna eu ex.</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="chat-container_Jack">
+		<div class="message_Jack">
+			<div class="avatar_Jack">
+				<img src="icons/avatar_1.png" alt="User Avatar">
+				<div class="user-info_Jack">
+					<div class="user-name_Jack">Jack Silverstone</div>
+					<div class="time-ago_Jack">4 hours ago</div>
+				</div>
+			</div>
+			<div class="message-content_Jack">
 				<div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu non nisl
 					tristique bibendum. Quisque auctor, enim vitae faucibus lacinia, mi libero posuere urna, vel dapibus tellus
 					urna eu ex.</div>
