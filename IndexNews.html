@@ -8,106 +8,130 @@
 	<title>News</title>
 
 	<style>
-		.container {
+		.flex {
 			display: flex;
-			flex-wrap: wrap;
+			margin: 2%;
+			flex: 1 2 auto;
+			max-width: 800px;
+			padding: 1%;
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		.inflex {
+			display: flex;
+			flex-direction: column;
+			flex: 1 2 auto;
+			min-width: 8em;
+			flex-basis: 800px;
+		}
+
+		.flex-container {
+			display: flex;
+			flex-direction: column;
+			flex: 0 2 auto;
+		}
+
+		.space-between {
 			justify-content: space-between;
-			background-color: #add8e6;
-			margin: 10px;
 		}
 
-		.column {
-			flex-basis: calc(33.333% - 20px);
-			margin-bottom: 20px;
+		.flex-item {
+
+			font-family: sans-serif;
+			margin: 5%;
+		}
+
+		.color {
+			background-color: #6bc5d9aa;
+		}
+
+		article {
+			display: flex;
+			flex-direction: column;
+			flex: 1 2 auto;
+		}
+
+		.w {
 			background-color: white;
-			height: max-content;
 		}
 
-		.column img {
-			width: 100%;
-			height: auto;
+		h3 {
+			text-align: left;
+			padding-left: 5%;
+			margin-bottom: 0;
 		}
 
-		.column h2 {
-			margin: 10px 0;
-			font-size: 1.5em;
-			line-height: 1.2;
-			padding: 0px 10px 0px 10px;
-		}
-
-		.column p {
-			margin: 0;
-			font-size: 1em;
-			line-height: 1.4;
-			padding: 0px 10px 0px 10px;
-		}
-
-		@media (max-width: 768px) {
-			.column {
-				flex-basis: 48%;
-			}
-		}
-
-		@media (max-width: 480px) {
-			.column {
-				flex-basis: 100%;
-			}
-		}
-
-		body {
-			background-color: #add8e6;
+		span {
+			padding: 5%;
+			text-align: left;
 		}
 	</style>
 </head>
 
 <body>
-	<div class="container">
-		<div class="column">
-			<img src="https://via.placeholder.com/350x150" alt="News Image">
-			<h2>News Title</h2>
-			<p>Lorem</p>
+	<div class="flex space-between color">
+		<div class="inflex">
+			<div class="flex-container space-between">
+				<article class="flex-item w">
+					<img src="icons/350x150.png">
+					<h3>Title</h3>
+					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Maecenas ac pulvinar risus. Pellentesque arcu elit,
+						vestibulum a arcu sit amet.
+				</article>
+				<article class="flex-item w">
+					<img src="icons/350x220.png">
+					<span>Sed congue tellus ut convallis mattis.Duis porttitor ultrices enim.
+				</article>
+				<article class="flex-item w">
+					<img src="icons/350x100.png">
+					<h3>Title</h3>
+					<span>Nulla eu tincidunt nibh. Nulla pharetra arcu ac velit egestas,
+						non malesuada metus ultrices.
+				</article>
+			</div>
 		</div>
-		<div class="column">
-			<img src="https://via.placeholder.com/350x220" alt="News Image">
-			<h2>News Title</h2>
-			<p>Lorem ipsum dolor sit amet.</p>
+		<div class="inflex">
+			<div class="flex-container space-between">
+				<article class="flex-item w">
+					<img src="icons/350x100.png">
+					<span>Interdum et malesuada fames ac ante ipsum primis in faucibus.
+						Nunc scelerisque augue ac elit mattis consectetur.
+				</article>
+				<article class="flex-item w">
+					<img src="icons/350x230.png">
+					<h3>The title</h3>
+					<span>Nunc elementum magna purus, elementum pretium orci hendrerit et.
+						Cras gravida lacus non condimentum ullamcorper.
+				</article>
+				<article class="flex-item w">
+					<img src="icons/350x150.png">
+					<span>Maecenas vitae nibh tellus. Nullam mollis lacus quis urna facilisis,
+						eget scelerisque lacus vestibulum. Quisque gravida lectus nibh.
+				</article>
+			</div>
 		</div>
-		<div class="column">
-			<img src="https://via.placeholder.com/350x100" alt="News Image">
-			<h2>News Title</h2>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, fugit?</p>
-		</div>
-		<div class="column">
-			<img src="https://via.placeholder.com/350x100" alt="News Image">
-			<h2>News Title</h2>
-			<p>Lorem</p>
-		</div>
-		<div class="column">
-			<img src="https://via.placeholder.com/350x230" alt="News Image">
-			<h2>News Title</h2>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum vero unde, illum beatae quod expedita mollitia
-				obcaecati aliquam!</p>
-		</div>
-		<div class="column">
-			<img src="https://via.placeholder.com/350x150" alt="News Image">
-			<h2>News Title</h2>
-			<p>Lorem</p>
-		</div>
-		<div class="column">
-			<img src="https://via.placeholder.com/350x100" alt="News Image">
-			<h2>News Title</h2>
-			<p>Lorem</p>
-		</div>
-		<div class="column">
-			<img src="https://via.placeholder.com/350x350" alt="News Image">
-			<h2>News Title</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corrupti fugit praesentium, architecto quam
-				aliquam tempora vitae amet.</p>
-		</div>
-		<div class="column">
-			<img src="https://via.placeholder.com/350x150" alt="News Image">
-			<h2>News Title</h2>
-			<p>Lorem</p>
+		<div class="inflex">
+			<div class="flex-container space-between">
+				<article class="flex-item w">
+					<img src="icons/350x100.png">
+					<h3>A litle longer title</h3>
+					<span>Vivamus quis mi eu nibh mollis ullamcorper. Nulla facilisi.
+						Proin viverra mauris quis nibh dapibus congue.
+				</article>
+				<article class="flex-item w">
+					<img src="icons/350x350.png">
+					<h3>A title</h3>
+					<span>Cras posuere nunc ex, eu lobortis massa ultricies non.
+						Proin libero ligula, consectetur nec lobortis sed, vehicula ac arcu.
+				</article>
+				<article class="flex-item w">
+					<img src="icons/350x150.png">
+
+					<span>Aenean sed diam sed metus interdum ullamcorper. Nullam vel imperdiet nisi.
+				</article>
+			</div>
 		</div>
 
 	</div>
