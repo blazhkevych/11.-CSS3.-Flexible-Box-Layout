@@ -5,134 +5,68 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Chat</title>
 
 	<style>
-		.chat-container_Anie {
-			display: flex;
-			justify-content: center;
-			margin-right: 20%;
+		.user-name_Anie,
+		.user-name_Jack {
+			font-weight: bold;
 		}
 
-		.chat-container_Jack {
-			display: flex;
-			justify-content: center;
-			margin-left: 20%;
-		}
-
-		.message_Anie {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: flex-start;
-			margin: 10px;
-			padding: 10px;
-			border-radius: 10px;
-		}
-
+		.message_Anie,
 		.message_Jack {
 			display: flex;
-			flex-direction: row-reverse;
-			align-items: center;
-			justify-content: flex-start;
-			margin: 10px;
-			padding: 10px;
-			border-radius: 10px;
+			width: 90vw;
 		}
 
-		.avatar_Anie {
-			margin-right: 10px;
+		.avatar_Anie,
+		.avatar_Jack,
+		.chat-container_Jack,
+		.chat-container_Anie {
 			display: flex;
-			flex-direction: row-reverse;
 			align-items: center;
-			justify-content: flex-start;
-			width: 25%;
+			justify-content: flex-end;
+			width: 20vw;
 		}
 
 		.avatar_Jack {
-			margin-left: 10px;
-			display: flex;
-			flex-direction: row;
-			align-items: center;
+			order: 1;
 			justify-content: flex-start;
-			width: 25%;
 		}
 
-		.avatar img {
-			width: 50px;
-			height: 50px;
-			border-radius: 50%;
-			float: right;
-		}
-
-		.message-content_Anie {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			justify-content: center;
-			width: 100%;
-			padding: 10px;
-			background-color: pink;
-			border-top-right-radius: 10px;
-			border-top-left-radius: 10px;
-			border-bottom-right-radius: 10px;
-		}
-
-		.message-content_Jack {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			justify-content: center;
-			width: 100%;
-			padding: 10px;
-			background-color: pink;
-			border-top-left-radius: 10px;
-			border-top-right-radius: 10px;
-			border-bottom-left-radius: 10px;
-		}
-
-		.user-info_Anie {
-			display: flex;
-			flex-direction: column;
-			align-items: right;
-			justify-content: space-between;
-			width: 100%;
-			color: black;
-			font-weight: bold;
-		}
-
-		.user-info_Jack {
-			display: flex;
-			flex-direction: column;
-			align-items: left;
-			justify-content: space-between;
-			width: 100%;
-			color: black;
-			font-weight: bold;
-		}
-
-		.user-name_Anie {
-			text-align: right;
-		}
-
-		.user-name_Jack {
-			text-align: left;
+		.avatar_Anie img {
+			order: 1;
 		}
 
 		.time-ago_Anie {
-			color: gray;
-			font-size: 12px;
+			text-align: right;
 		}
 
-		.time-ago_Jack {
-			color: gray;
-			font-size: 12px;
+		.message-content_Anie,
+		.message-content_Jack {
+			width: 70vw;
+			margin: 10px;
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
 		}
 
-		.message-text {
-			color: black;
-			margin: 5px;
-			font-size: 14px;
+		.message-content_Anie {
+			background-color: pink;
+			border-bottom-right-radius: 10px;
+			box-shadow: 0 0 0 5px pink;
+		}
+
+		.message-content_Jack {
+			background-color: #aed8e6;
+			border-bottom-left-radius: 10px;
+			box-shadow: 0 0 0 5px #aed8e6;
+		}
+
+		img {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
 		}
 	</style>
 
@@ -140,37 +74,105 @@
 
 <body>
 
-	<div class="chat-container_Anie">
-		<div class="message_Anie">
-			<div class="avatar_Anie">
-				<img src="icons/avatar_2.png" alt="User Avatar">
-				<div class="user-info_Anie">
-					<div class="user-name_Anie">Anie Smith</div>
-					<div class="time-ago_Anie">4 hours ago</div>
-				</div>
+	<div class="message_Anie">
+		<div class="avatar_Anie">
+			<img src="icons/avatar_2.png" alt="User Avatar">
+			<div class="user-info_Anie">
+				<div class="user-name_Anie">Anie Smith</div>
+				<div class="time-ago_Anie">4 hours ago</div>
 			</div>
-			<div class="message-content_Anie">
-				<div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu non nisl
-					tristique bibendum. Quisque auctor, enim vitae faucibus lacinia, mi libero posuere urna, vel dapibus tellus
-					urna eu ex.</div>
-			</div>
+		</div>
+		<div class="message-content_Anie">
+			<div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu non nisl
+				tristique bibendum. Quisque auctor, enim vitae faucibus lacinia, mi libero posuere urna, vel dapibus tellus
+				urna eu ex.</div>
+		</div>
+		<div class="chat-container_Anie">
 		</div>
 	</div>
 
-	<div class="chat-container_Jack">
-		<div class="message_Jack">
-			<div class="avatar_Jack">
-				<img src="icons/avatar_1.png" alt="User Avatar">
-				<div class="user-info_Jack">
-					<div class="user-name_Jack">Jack Silverstone</div>
-					<div class="time-ago_Jack">4 hours ago</div>
-				</div>
+	<div class="message_Jack">
+		<div class="chat-container_Jack">
+		</div>
+		<div class="avatar_Jack">
+			<img src="icons/avatar_1.png" alt="User Avatar">
+			<div class="user-info_Jack">
+				<div class="user-name_Jack">Jack Silverstone</div>
+				<div class="time-ago_Jack">4 hours ago</div>
 			</div>
-			<div class="message-content_Jack">
-				<div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu non nisl
-					tristique bibendum. Quisque auctor, enim vitae faucibus lacinia, mi libero posuere urna, vel dapibus tellus
-					urna eu ex.</div>
+		</div>
+		<div class="message-content_Jack">
+			<div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu non nisl
+				tristique bibendum. Quisque auctor, enim vitae faucibus lacinia, mi libero posuere urna, vel dapibus tellus
+				urna eu ex.</div>
+		</div>
+	</div>
+
+	<div class="message_Anie">
+		<div class="avatar_Anie">
+			<img src="icons/avatar_2.png" alt="User Avatar">
+			<div class="user-info_Anie">
+				<div class="user-name_Anie">Anie Smith</div>
+				<div class="time-ago_Anie">4 hours ago</div>
 			</div>
+		</div>
+		<div class="message-content_Anie">
+			<div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu non nisl
+				tristique bibendum. Quisque auctor, enim vitae faucibus lacinia, mi libero posuere urna, vel dapibus tellus
+				urna eu ex.</div>
+		</div>
+		<div class="chat-container_Anie">
+		</div>
+	</div>
+
+	<div class="message_Jack">
+		<div class="chat-container_Jack">
+		</div>
+		<div class="avatar_Jack">
+			<img src="icons/avatar_1.png" alt="User Avatar">
+			<div class="user-info_Jack">
+				<div class="user-name_Jack">Jack Silverstone</div>
+				<div class="time-ago_Jack">3 hours ago</div>
+			</div>
+		</div>
+		<div class="message-content_Jack">
+			<div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu non nisl
+				tristique bibendum. Quisque auctor, enim vitae faucibus lacinia, mi libero posuere urna, vel dapibus tellus
+				urna eu ex.</div>
+		</div>
+	</div>
+
+	<div class="message_Anie">
+		<div class="avatar_Anie">
+			<img src="icons/avatar_2.png" alt="User Avatar">
+			<div class="user-info_Anie">
+				<div class="user-name_Anie">Anie Smith</div>
+				<div class="time-ago_Anie">3 hours ago</div>
+			</div>
+		</div>
+		<div class="message-content_Anie">
+			<div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu non nisl
+				tristique bibendum. Quisque auctor, enim vitae faucibus lacinia, mi libero posuere urna, vel dapibus tellus
+				urna eu ex.</div>
+		</div>
+		<div class="chat-container_Anie">
+		</div>
+	</div>
+
+	<div class="message_Jack">
+		<div class="chat-container_Jack">
+		</div>
+		<div class="avatar_Jack">
+			<img src="icons/avatar_1.png" alt="User Avatar">
+			<div class="user-info_Jack">
+				<div class="user-name_Jack">Jack Silverstone</div>
+				<div class="time-ago_Jack">2 hours ago</div>
+			</div>
+		</div>
+		<div class="message-content_Jack">
+			<div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu non nisl
+				tristique bibendum. Quisque auctor, enim vitae faucibus lacinia, mi libero posuere urna, vel dapibus tellus
+				urna eu ex.</div>
 		</div>
 	</div>
 
